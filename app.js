@@ -2,7 +2,7 @@ const { Server } = require('socket.io')
 const cors = require("cors");
 const handlebars = require("express-handlebars");
 
-const corsConfig = require("./config/cors.config");
+const messagesModel = require("./dao/models/messages.model");
 
 class App {
   app;
